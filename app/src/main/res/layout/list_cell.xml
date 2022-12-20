@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_margin="16dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/productCardView"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:backgroundTint="@color/black"
+        app:cardCornerRadius="20dp">
+
+        <RelativeLayout
+            android:layout_width="296dp"
+            android:layout_height="129dp">
+
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="44dp"
+                android:layout_height="43dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="65dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/whitecart" />
+
+            <TextView
+                android:id="@+id/productTitle"
+                android:layout_width="186dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="34dp"
+                android:layout_marginBottom="73dp"
+                android:layout_toEndOf="@+id/img"
+                android:text="New Arrivals"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
